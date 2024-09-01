@@ -6,18 +6,14 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
-@Document(value = "Video")
+@Document(value = "User")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Video {
+public class User {
 
     @Id
-    private String id;
-    private String title;
-    private String description;
-    private String videoUrl;
-    private List<String> usersThatWatched;
+    private String email;
+    private String fullName;
+    private String profilePictureUrl;
 }
